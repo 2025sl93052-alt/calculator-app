@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t calculator-app .'
+                sh '/opt/homebrew/bin/docker build -t calculator-app .'
             }
         }
     }
