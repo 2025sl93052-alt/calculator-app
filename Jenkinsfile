@@ -23,7 +23,7 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
-                sh 'kubectl apply -f deployment.yaml'
+                sh '/opt/homebrew/bin/kubectl apply -f deployment.yaml'
             }
         }
     }
